@@ -29,12 +29,14 @@ namespace Area__and__perimeter
             return (Apothem*Perimeter())/2;
         }
 
+
+        //Methods for printing
         public string PrintA()
         {
             return "" + Area();
         }
 
-
+        
         public string PrintP ()
         {
             return "" + Perimeter();
