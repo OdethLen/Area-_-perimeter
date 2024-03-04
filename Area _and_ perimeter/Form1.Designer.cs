@@ -40,6 +40,16 @@
             btnCalculate = new Button();
             button2 = new Button();
             button3 = new Button();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            label9 = new Label();
+            label10 = new Label();
+            txtTBase = new TextBox();
+            txtTHeight = new TextBox();
+            txtAreaT = new TextBox();
+            txtPerT = new TextBox();
+            btnCalculateT = new Button();
             SuspendLayout();
             // 
             // label1
@@ -123,7 +133,7 @@
             // btnCalculate
             // 
             btnCalculate.Font = new Font("PMingLiU-ExtB", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCalculate.Location = new Point(243, 71);
+            btnCalculate.Location = new Point(234, 71);
             btnCalculate.Name = "btnCalculate";
             btnCalculate.Size = new Size(75, 23);
             btnCalculate.TabIndex = 9;
@@ -134,7 +144,7 @@
             // button2
             // 
             button2.Font = new Font("PMingLiU-ExtB", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.Location = new Point(243, 109);
+            button2.Location = new Point(210, 253);
             button2.Name = "button2";
             button2.Size = new Size(75, 23);
             button2.TabIndex = 10;
@@ -145,7 +155,7 @@
             // button3
             // 
             button3.Font = new Font("PMingLiU-ExtB", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.Location = new Point(243, 154);
+            button3.Location = new Point(315, 253);
             button3.Name = "button3";
             button3.Size = new Size(75, 23);
             button3.TabIndex = 11;
@@ -153,11 +163,111 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click_1;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("PMingLiU-ExtB", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.Location = new Point(416, 35);
+            label6.Name = "label6";
+            label6.Size = new Size(70, 19);
+            label6.TabIndex = 12;
+            label6.Text = "Triangle";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("PMingLiU-ExtB", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.Location = new Point(350, 71);
+            label7.Name = "label7";
+            label7.Size = new Size(37, 15);
+            label7.TabIndex = 13;
+            label7.Text = "Base:";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("PMingLiU-ExtB", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label8.Location = new Point(350, 104);
+            label8.Name = "label8";
+            label8.Size = new Size(45, 15);
+            label8.TabIndex = 14;
+            label8.Text = "Heigth";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("PMingLiU-ExtB", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.Location = new Point(350, 157);
+            label9.Name = "label9";
+            label9.Size = new Size(38, 15);
+            label9.TabIndex = 15;
+            label9.Text = "Area:";
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("PMingLiU-ExtB", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label10.Location = new Point(350, 188);
+            label10.Name = "label10";
+            label10.Size = new Size(66, 15);
+            label10.TabIndex = 16;
+            label10.Text = "Perimeter:";
+            // 
+            // txtTBase
+            // 
+            txtTBase.Location = new Point(422, 63);
+            txtTBase.Name = "txtTBase";
+            txtTBase.Size = new Size(100, 23);
+            txtTBase.TabIndex = 17;
+            // 
+            // txtTHeight
+            // 
+            txtTHeight.Location = new Point(422, 96);
+            txtTHeight.Name = "txtTHeight";
+            txtTHeight.Size = new Size(100, 23);
+            txtTHeight.TabIndex = 18;
+            // 
+            // txtAreaT
+            // 
+            txtAreaT.Location = new Point(422, 154);
+            txtAreaT.Name = "txtAreaT";
+            txtAreaT.Size = new Size(100, 23);
+            txtAreaT.TabIndex = 19;
+            // 
+            // txtPerT
+            // 
+            txtPerT.Location = new Point(422, 185);
+            txtPerT.Name = "txtPerT";
+            txtPerT.Size = new Size(100, 23);
+            txtPerT.TabIndex = 20;
+            txtPerT.TextChanged += textBox1_TextChanged;
+            // 
+            // btnCalculateT
+            // 
+            btnCalculateT.Font = new Font("PMingLiU-ExtB", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnCalculateT.Location = new Point(539, 63);
+            btnCalculateT.Name = "btnCalculateT";
+            btnCalculateT.Size = new Size(75, 23);
+            btnCalculateT.TabIndex = 21;
+            btnCalculateT.Text = "Calculate ";
+            btnCalculateT.UseVisualStyleBackColor = true;
+            btnCalculateT.Click += btnCalculateT_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(367, 255);
+            ClientSize = new Size(636, 288);
+            Controls.Add(btnCalculateT);
+            Controls.Add(txtPerT);
+            Controls.Add(txtAreaT);
+            Controls.Add(txtTHeight);
+            Controls.Add(txtTBase);
+            Controls.Add(label10);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(label7);
+            Controls.Add(label6);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(btnCalculate);
@@ -191,5 +301,15 @@
         private Button btnCalculate;
         private Button button2;
         private Button button3;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private Label label9;
+        private Label label10;
+        private TextBox txtTBase;
+        private TextBox txtTHeight;
+        private TextBox txtAreaT;
+        private TextBox txtPerT;
+        private Button btnCalculateT;
     }
 }
